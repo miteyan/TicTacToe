@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:padding="40dp"
+    tools:context="com.miteyan.tictactoe.MainActivity"
+    android:background="@color/bg">
+<!--TEXT-->
+    <TableLayout
+        android:orientation="vertical"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity = "center" >
+            <TextView
+                android:id = "@+id/winnerLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/player1"
+                android:textColor="@color/text"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity = "center" >
+            <TextView
+                android:id = "@+id/wins2p"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="P1 wins:0        Draws:0       P2 wins:0 "
+                android:textColor="@color/text"/>
+
+        </TableRow>
+    </TableLayout>
+<!--TICTACTOE ROWS-->
+
+    <!--ROW 2 = TICTACTOE ROW 1  -->
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/NW"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:onClick="pushButton"
+            style= "@style/Widget.AppCompat.Button.Colored"
+            android:theme="@style/button"
+
+            />
+
+        <Button
+            android:id="@+id/N"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="pushButton"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            style= "@style/Widget.AppCompat.Button.Colored"
+            android:theme="@style/button"
+            />
+
+        <Button
+            android:id="@+id/NE"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="pushButton"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            style= "@style/Widget.AppCompat.Button.Colored"
+            android:theme="@style/button"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >        <!--ROW 3 = TICTACTOE ROW 2  -->
+        <Button
+            android:id="@+id/W"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:onClick="pushButton"
+            style= "@style/Widget.AppCompat.Button.Colored"
+            android:theme="@style/button"
+            />
+
+        <Button
+            android:id="@+id/C"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:onClick="pushButton"
+            style= "@style/Widget.AppCompat.Button.Colored"
+            android:theme="@style/button"
+            />
+
+        <Button
+            android:id="@+id/E"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="pushButton"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            style= "@style/Widget.AppCompat.Button.Colored"
+            android:theme="@style/button"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >        <!--ROW 4 = TICTACTOE ROW 3  -->
+        <Button
+            android:id="@+id/SW"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:onClick="pushButton"
+            style= "@style/Widget.AppCompat.Button.Colored"
+            android:theme="@style/button"
+            />
+
+        <Button
+            android:id="@+id/S"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:onClick="pushButton"
+            style= "@style/Widget.AppCompat.Button.Colored"
+            android:theme="@style/button"
+            />
+
+        <Button
+            android:id="@+id/SE"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:onClick="pushButton"
+            style= "@style/Widget.AppCompat.Button.Colored"
+            android:theme="@style/button"
+            />
+
+    </TableRow>
+
+<!--RESTART BUTTON-->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity = "center_horizontal">
+        <Button
+            android:id="@+id/btnStartAgain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="startAgain"
+            android:text="@string/restartButton"
+            style= "@style/Widget.AppCompat.Button.Colored"
+            android:theme="@style/RestartButton"
+
+            />
+        <!--ROW 5 = RESTART BUTTON  -->
+    </TableRow>
+
+</TableLayout>
