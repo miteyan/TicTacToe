@@ -1,8 +1,8 @@
 # TicTacToe
 
 <a href="url"><img src="http://miteyan.com/img/Apps/ttt3.png" align="left" height="500" ></a>
-<a href="url"><img src="http://miteyan.com/img/Apps/ttt.png" align="middle" height="500" ></a>
-<a href="url"><img src="http://miteyan.com/img/Apps/ttt.png" align="right" height="500" ></a>
+<a href="url"><img src="http://miteyan.com/img/Apps/ttt2.png" align="middle" height="500" ></a>
+<a href="url"><img src="http://miteyan.com/img/Apps/ttt1.png" align="right" height="500" ></a>
 
 This is an app to play the famous Tic Tac Toe game on Android in a material design way. You can play against a human player or against the computer which uses a minimax algorithm and is undefeatable as it pre-empts your moves and makes its move based on that, meaning at best means that you can only draw. 
 
